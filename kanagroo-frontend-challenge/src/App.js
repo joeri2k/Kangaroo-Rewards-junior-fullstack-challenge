@@ -1,10 +1,10 @@
 import * as React from "react";
-import Surveys from "./pages/Surveys";
+import Survey from "./pages/Survey";
 
 function App() {
   return (
     <div>
-      <Surveys />
+      <Survey />
     </div>
   );
 }
