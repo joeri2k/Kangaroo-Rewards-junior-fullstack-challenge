@@ -3,20 +3,6 @@ import Table from "../components/Table";
 import axios from "axios";
 
 function Survey() {
-  //   const data1 = [
-  //     {
-  //       name: "Paris",
-  //       code: "XX1",
-  //     },
-  //     {
-  //       name: "Melun",
-  //       code: "XX3",
-  //     },
-  //     {
-  //       name: "Chartres",
-  //       code: "XX2",
-  //     },
-  //   ];
   const [data, setData] = useState("");
   async function getSurveys() {
     const url = "http://127.0.0.1:8001/api/surveys";
@@ -34,8 +20,8 @@ function Survey() {
   }, []);
   return (
     <div className="container">
-      {/* <div>{data1}</div> */}
-      <h1>title</h1>
+      <h1>Kangaroo Rewards junior fullstack challenge </h1>
+      <h2>List of the surveys</h2>
       <Table data={data && data} />
     </div>
   );
