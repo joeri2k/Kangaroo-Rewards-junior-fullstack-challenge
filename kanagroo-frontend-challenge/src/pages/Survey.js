@@ -1,11 +1,26 @@
 import React from "react";
+import Table from "../components/Table";
 
-function Surveys() {
+function Survey() {
+  const data = [
+    {
+      name: "Paris",
+      code: "XX1",
+    },
+    {
+      name: "Melun",
+      code: "XX3",
+    },
+    {
+      name: "Chartres",
+      code: "XX2",
+    },
+  ];
   return (
-    <div>
-      <div>test</div>
+    <div className="container">
+      <Table data={data} />
     </div>
   );
 }
 
-export default Surveys;
+export default Survey;
