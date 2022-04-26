@@ -18,4 +18,19 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+table {
+  border: 3px solid white;
+  width: 200px;
+  height: 150px;
+}
+th {
+  border: 1px solid white;
+}
+td {
+  text-align: center;
+  border: 1px solid white;
 }
