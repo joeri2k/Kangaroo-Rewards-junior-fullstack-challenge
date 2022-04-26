@@ -4,18 +4,23 @@ function Table({ data }) {
   return (
     <div>
       <table>
-        <tr>
-          <th>Name</th>
-          <th>Code</th>
-        </tr>
-        {data.map((val, key) => {
-          return (
-            <tr key={key}>
-              <td>{val.name}</td>
-              <td>{val.code}</td>
-            </tr>
-          );
-        })}
+        <tbody>
+          <tr>
+            <th>Name</th>
+            <th>Code</th>
+          </tr>
+        </tbody>
+        {data &&
+          data.map((val, key) => {
+            return (
+              <tbody key={key}>
+                <tr>
+                  <td>{val.name}</td>
+                  <td>{val.code}</td>
+                </tr>
+              </tbody>
+            );
+          })}
       </table>
     </div>
   );
